@@ -1,0 +1,14 @@
+<div class="Row CenterV">
+    <h4 class="MarginTop5x">Recent Transactions</h4>
+    <div class="FillParent"></div>
+    <div class="Row CenterV SortCriteriaSelector MarginRight0-5x">
+        <div class="MarginRight4x">Sort by</div>
+        <span class="ri-arrow-down-s-line"></span>
+    </div>
+    <span class="ri-sort-desc"></span>
+</div>
+
+<ng-container *ngFor="let transaction of transactions; let last=last">
+    <app-transaction [transaction]="transaction"></app-transaction>
+    <ng-container *ngIf="!last"><div class="TransactionSeparator"></div></ng-container>
+</ng-container>

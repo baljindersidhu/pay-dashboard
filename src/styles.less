@@ -1,1 +1,245 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--app-bg-color);
+
+    --primary-theme-color: #222222;
+    --app-bg-color: #dfe2eb;
+    --card-border-radius: 24px;
+}
+
+.Position{
+    &.Relative{
+        position: relative;
+    }
+
+    &.Absolute{
+        position: absolute;
+    }
+}
+
+/*
+
+============================
+Alignment Styles
+============================
+
+*/
+
+.Row{
+    display: flex;
+    flex-direction: row;
+
+    &.Reverse{
+        flex-direction: row-reverse;
+    }
+
+    &.CenterV{
+        align-items: center;
+    }
+
+    &.CenterH{
+        justify-content: center;
+    }
+
+    &.AlignSpaceEvenly{
+        justify-content: space-evenly;
+    }
+
+    .FillParent{
+        flex: 1;
+    }
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+
+    &.Reverse{
+        flex-direction: column-reverse;
+    }
+
+    &.CenterH{
+        align-items: center;
+    }
+
+    &.CenterV{
+        justify-content: center;
+    }
+
+    .FillParent{
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+
+.MarginLeft-1x{
+    margin-left: -1vw;
+}
+
+.MarginLeft0-5x{
+    margin-left: 0.5vw;
+}
+
+.MarginLeft1x{
+    margin-left: 1vw;
+}
+
+.MarginLeft1-5x{
+    margin-left: 1.5vw;
+}
+
+.MarginLeft2x{
+    margin-left: 2vw;
+}
+
+.MarginLeft3x{
+    margin-left: 3vw;
+}
+
+.MarginRight-1x{
+    margin-right: -1vw;
+}
+
+.MarginRight0-5x{
+    margin-right: 0.5vw;
+}
+
+.MarginRight1x{
+    margin-right: 1vw;
+}
+
+.MarginRight2x{
+    margin-right: 2vw;
+}
+
+.MarginRight4x{
+    margin-right: 4vw;
+}
+
+.MarginRight6x{
+    margin-right: 6vw;
+}
+
+.MarginBottom0x{
+    margin-bottom: 0vh;
+}
+
+.MarginBottom1x{
+    margin-bottom: 1vh;
+}
+
+.MarginBottom1-5x{
+    margin-bottom: 1.5vh;
+}
+
+.MarginBottom2-5x{
+    margin-bottom: 2.5vh;
+}
+
+.MarginBottom5x{
+    margin-bottom: 5vh;
+}
+
+.MarginTop0x{
+    margin-top: 0vh;
+}
+
+.MarginTop1x{
+    margin-top: 1vh;
+}
+
+.MarginTop1-5x{
+    margin-top: 1.5vh;
+}
+
+.MarginTop2x{
+    margin-top: 2vh;
+}
+
+.MarginTop3x{
+    margin-top: 3vh;
+}
+
+.MarginTop4x{
+    margin-top: 4vh;
+}
+
+.MarginTop5x{
+    margin-top: 5vh;
+}
+
+.MarginTop6x{
+    margin-top: 6vh;
+}
+
+.MarginTop8x{
+    margin-top: 8vh;
+}
+
+
+
+
+.Text{
+
+    &.Bold{
+        font-weight: bold;
+    }
+
+    &.Bold1x{
+        font-weight: 100;
+    }
+
+    &.Bold3x{
+        font-weight: 300;
+    }
+
+    &.Bold4x{
+        font-weight: 400;
+    }
+
+    &.Bold5x{
+        font-weight: 500;
+    }
+
+    &.AlignCenter{
+        text-align: center;
+    }
+
+    &.AlignRight{
+        text-align: right;
+    }
+
+}
+
+.Font{
+    &.Size0-35x{
+        font-size: 0.35rem;
+    }
+
+    &.Size0-65x{
+        font-size: 0.65rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+.Transform{
+    &.Scale0-65x{
+        transform: scale(0.65);
+    }
+}

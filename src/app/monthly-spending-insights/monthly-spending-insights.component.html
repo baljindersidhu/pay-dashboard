@@ -1,0 +1,46 @@
+<div class="SpendingInsights">
+    <div class="Row CenterV">
+        <div class="FillParent Text AlignCenter SpendInsightContainerHeading">Saved This Month</div>
+        <span class="ri-more-2-fill"></span>
+    </div>
+
+    <h4 class="Text AlignCenter MarginTop1-5x MarginBottom1-5x">$25,999.00</h4>
+
+    <div class="Row AlignSpaceEvenly TimePeriodSelector">
+        <div>Day</div>
+        <div>Week</div>
+        <div class="Active">Month</div>
+        <div>Year</div>
+    </div>
+
+    <div class="ChartContainer MarginTop1-5x MarginBottom1-5x">
+        <canvas #chartCanvas></canvas>
+    </div>
+
+    <div class="Row AlignSpaceEvenly MonthIndicator">
+        <div>May</div>
+        <div>Jun</div>
+        <div>Jul</div>
+        <div>Aug</div>
+        <div>Sep</div>
+        <div>Oct</div>
+        <div class="Active">Nov</div>
+    </div>
+
+    <div class="Position Relative ProgressTrackerContainer MarginTop8x MarginBottom2-5x">
+        <div class="Position Absolute TrackerShadow"></div>
+        <div class="Position Absolute TrackerShadow"></div>
+        <div class="Position Absolute TrackerShadow"></div>
+        
+        <div class="Row CenterV Position Relative ProgressTracker">
+            <div>
+                <div>{{"Plan for " + currentYear}}</div>
+                <div>Completed</div>
+            </div>
+            <div class="FillParent"></div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/1535/1535019.svg" 
+                class="TrackerAvatar" alt="goal_completed_avatar">
+        </div>
+    </div>
+
+</div>

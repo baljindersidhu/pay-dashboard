@@ -1,0 +1,75 @@
+.SpendingInsights{
+    background-color: var(--app-bg-color);
+    border-radius: var(--card-border-radius);
+    padding: 3vh 1.5vw;
+
+    .SpendInsightContainerHeading,
+    .TimePeriodSelector,
+    .MonthIndicator{
+        color: grey;
+        font-size: 0.8rem;
+        font-weight: 500;
+
+        .Active{
+            color: initial;
+        }
+    }
+
+    .ChartContainer{
+        height: 28vh;
+    }
+
+    .ProgressTrackerContainer{
+        width: 25vw;
+        margin-left: 4.5vw;
+
+        .TrackerShadow{
+            background-color: var(--primary-theme-color);
+            border-top-left-radius: var(--card-border-radius);
+            border-top-right-radius: var(--card-border-radius);
+
+            &:nth-child(1){
+                opacity: 0.2;
+                height: 2vh;
+                width: 90%;
+                left: 5%;
+                top: -1.5vh;
+            }
+        
+            &:nth-child(2){
+                opacity: 0.1;
+                height: 4vh;
+                width: 80%;
+                left: 10%;
+                top: -3vh;
+            }
+
+            &:nth-child(3){
+                opacity: 0.07;
+                height: 6vh;
+                width: 70%;
+                left: 15%;
+                top: -4.5vh;
+            }
+        }
+    }
+
+    .ProgressTracker{
+        background-color: var(--primary-theme-color);
+        border-radius: var(--card-border-radius);
+        box-shadow: 0px 15px 30px -15px #333;
+        padding: 3vh 2.5vw;
+        color: white;
+
+        div{
+            div:first-child{
+                opacity: 0.5;
+            }
+        }
+
+        .TrackerAvatar{
+            height: 10vh;
+        }
+    }
+
+}

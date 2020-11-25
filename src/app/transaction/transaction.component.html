@@ -1,0 +1,8 @@
+<div class="Row CenterV Transaction">
+    <span data-avatar class="{{transaction.iconSrc}}"></span>
+    <h5 class="MarginTop0x MarginBottom0x MarginLeft1-5x MarginRight2x TransactionCategory">{{transaction.transactionCategory}}</h5>
+    <div class="TransactionDate">{{transaction.transactionDate | transactionDate}}</div>
+    <h5 class="MarginTop0x MarginBottom0x TransactionAmount">{{"$" + (transaction.amount || "0")}}</h5>
+    <div class="FillParent"></div>
+    <span class="ri-more-2-fill"></span>
+</div>

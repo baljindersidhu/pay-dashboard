@@ -1,0 +1,16 @@
+.SearchBoxContainer {
+    background-color: white;
+    border-radius: 80px;
+    padding: 1vh 1vw;
+    input{
+        border: none;
+        outline: none;
+        font-family: inherit;
+        border-radius: inherit;
+        width: 20vw;
+        transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus{
+            width: 25vw;
+        }
+    }
+}

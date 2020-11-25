@@ -1,0 +1,5 @@
+<div class="MarginBottom5x"></div>
+<div class="SidenavAction MarginLeft1-5x MarginRight1x" 
+    *ngFor="let action of actions" [title]="action.helpText || 'Action'">
+    <span class="{{action.active ? action.activeIconSrc: action.inactiveIconSrc}}"></span>
+</div>

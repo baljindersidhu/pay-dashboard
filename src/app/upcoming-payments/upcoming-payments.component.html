@@ -1,0 +1,11 @@
+<div class="Row MarginLeft-1x MarginRight-1x">
+    <div class="Column CenterH Payment MarginLeft1x MarginRight1x" 
+        *ngFor="let payment of payments">
+        <div class="Row CenterH CenterV PaymentAvatar MarginTop1x">
+            <span class="{{payment.iconSrc}}"></span>
+        </div>
+        <h4 class="MarginTop2x MarginBottom0x PaymentCategory">{{payment.paymentCategory}}</h4>
+        <small class="Font Size0-65x">{{payment.paymentOrigin}}</small>
+        <h4 class="MarginTop0x MarginBottom1x">{{payment.amount}}</h4>
+    </div>
+</div>
